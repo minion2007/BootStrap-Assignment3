@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Modal in Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+     panel heading{
+     background-color:#CBF607;}
+  
+     footer.container-fluid{
+     background-color:#DCF1BC;}
+  
+     div .dropdown{
+     margin:0px 0px 0px 165px;}
+	 
+	.modal-header{
+	 background-color:#CEF7EA;
+	 padding:10px 10px;
+	 font-family:Verdana, sans-serif;
+	 }
+	 
+	 .modal-body{
+	 background-color:#CEF0F7;
+	 padding:10px 10px;
+	 font-family:Verdana,sans-serif;
+	
+	 }
+	 
+	 .modal-footer{
+	 background-color:#A5D4F4;
+	 }
+   </style>
+ <body>
+     <div class="panel panel-success">
+         <div class="panel-heading"><h1 class="text-center">Head To Toe</h1></div>
+		     <div class="panel-body">
+	             <div class="row">
+	                 <div class="col-sm-2"></div>
+	                     <div class="col-sm-4"><h3>Special Offers!</h3>
+	                     <p>Featuring informative, life-affirming articles to enchange your health,fitness and well being for just $1 an issue!Subscribe now and receive four digital downloads.</p><br><br>
+	                         <div class="panel panel-info">
+	                             <div class=" panel-heading"><h4 class="text-center">Select terms</h4></div>
+	                             </div>
+	           	                 <input type="radio" name="radio" class="radio">27 issues (3years) for $27 Best Deal!Save 83%</input><br><br>
+	                             <input type="radio" name="radio" class="radio">18 issues (2years) for $23.95 Save 83%</input><br><br>
+	                             <input type="radio" name="radio" class="radio">9 issues (1years) for $13.95 Save 83%</input><br><br>
+	                             <p><b>Click <a href="#">here</a> for international subscriptions.</b></p>	      
+	                   	   	     </div>
+	                                 <div class="col-sm-4"><h3 class="text-center">Subscribe Now</h3>
+	   	                             <form class="form-horizontal">
+	                                    <div class="form-group">
+		                                <label class="control-label col-sm-4" for="name">Name</label>
+		                                     <div class="col-sm-8">
+		                                     <input type="text" class="form-control" id="name" placeholder="Name">
+		                                     </div><br><br><br>		 
+		                                     <label class="control-label col-sm-4" for="add1">Address1</label>
+		                                         <div class="col-sm-8">
+		                                         <input type="text" class="form-control" id="add1" placeholder="Address1">
+		                                         </div><br><br><br>		 
+		                                         <label class="control-label col-sm-4" for="add1">Address2</label>
+		                                             <div class="col-sm-8">
+		                                             <input type="text" class="form-control" id="add2" placeholder="Address2">
+		                                             </div><br><br><br>
+	   	                                             <label class="control-label col-sm-4" for="city">City</label>
+		                                                 <div class="col-sm-8">
+		                                                     <input type="text" class="form-control" id="city" placeholder="City">
+		                                                 </div><br><br><br>
+	                                               	   <label class="control-label col-sm-4" for="state">State</label>
+		                                                     <div class="col-sm-8">
+		                                                         <input type="text" class="form-control" id="state" placeholder="State">
+		                                                     </div><br><br><br>
+	   	                                                     <label class="control-label col-sm-4" for="zipcode">ZipCode</label>
+		                                                         <div class="col-sm-8">
+		                                                             <input type="text" class="form-control" id="city" placeholder="Zipcode">
+		                                                         </div><br><br><br>
+		  		                                                     <div class="dropdown">
+		                                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Country
+			                                                            <span class="caret"></span></button>
+			                                                            <ul class="dropdown-menu">
+			                                                                 <li>India</li>
+			                                                                 <li>USA</li>
+																			 <li>Australia</li>
+																			 <li>Europe</li>
+																			 <li>Africa</li>
+																		</ul>
+																	 </div><br> 
+																	 <label class="control-label col-sm-4" for="email">Email</label>
+																		 <div class="col-sm-8">
+																		 <input type="text" class="form-control" id="email" placeholder="Email">
+																		 </div><br><br><br>
+																			 <div class="panel panel-default"><h3 class="text-center">Select Secure Payment Method</h3></div>
+																				 <label class="control-label col-sm-4" for="options">Choose options:</label><br>	      	    
+																				 <span class="input-group-addon"><input type="radio" name="radio" class="radio"><img src="visa.png" alt="visa" width="15px" height="15px">VISA</span></input>
+																				<span class="input-group-addon"> <input type="radio" name="radio" class="radio"><img src="americanexpress.jpg" alt="americanexpress" width="25px" height="25px">AMERICAN EXPRESS</span></input>
+																				<span class="input-group-addon"><input type="radio" name="radio" class="radio"><img src="mastercard.png" alt="mastercard" width="15px" height="15px">MASTER CARD</span></input>
+																				<span class="input-group-addon"><input type="radio" name="radio" class="radio"><img src="paypal.jpg" alt="paypal" width="15px" height="15px">PAYPAL</span></input><br><br>
+																				<label class="control-label col-sm-3" for="credicard">Credit Card</label>
+																				<span class="glyphicon glyphicon-lock">
+																				     <div class="col-sm-9">
+																					     <input type="numbers" class="form-control" id="creditcard">
+																						</span>
+																					 </div><br><br><br>
+																						 <div class="checkbox">
+																						     <label><input type="checkbox" value="">Bill me later</label>
+																						 </div>
+																							 <div class="checkbox">
+																								 <label><input type="checkbox" value="">Yes I would like to receive updates from Head to Toe</label><br><br>
+																							     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Subscribe Me</button>
+																								<!--Modal-->
+																									 <div id="myModal" class="modal fade" role="dialog">
+																										<div class="modal-dialog">
+		 																							<!--modal content-->
+																									 <div class="modal-content">
+																											<div class="modal-header">
+																												<button type="button" class="close" data-dismiss="modal">&times;</button>
+																											<h5 class="modal-title"> Confirmation</h4>
+																											</div>
+																												 <div class="modal-body">
+																													 <p>Do you want to save changes you made in the document?</p>
+																												 </div>
+																												 <div class="modal-footer">
+																													 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+																													 <button type="button" class="btn btn-success" data-dismiss="modal">Subscribe</button>
+																												 </div>
+			 		  																						</div>
+																									    </div>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-sm-2"></div>
+																							</div>
+																						</div>
+																					</div>
+																						<footer class="container-fluid text-center">
+																						<p> Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2016 <a href="3">thousandlights.com.</a><small>All Rights Reserved.</small></p>
+																						</footer>
+<script type="text/javascript" language="javascript">     																				
+	$(document)	.load(){
+	$("#myModal").modal('show');
+	});
+</script>	
+  </body>
+  </html>
